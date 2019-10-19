@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> parseHtmlAsJson </title>
+<script src="./parseHtmlAsJson.js" ></script>
+</head>
+<body>
+	<script>
+
+		var json = parse(`
+					<!DOCTYPE html>
+					<html>
+					<head>
+					<title>hello</title>
+					</head>
+					<body>
+						<div id="container">
+							<div class="header"></div>
+							<div class="content"></div>
+							<div class="footer"></div>
+						</div>
+					</body>
+					</html>
+					`);
+
+		console.log(JSON.stringify( json, false, 2 ));
+
+	</script>	
+</body>
+</html>
